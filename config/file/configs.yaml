@@ -1,0 +1,18 @@
+redis:
+  addresses: [ "127.0.0.1:6379" ]
+
+service:
+  service_name: "fiber-project-structure"
+  http_port: 2000
+  grpc_port: 2100
+
+postgres:
+  host: "127.0.0.1"
+  port: 5432
+  user: "postgres"
+  password: "mysecretpassword"
+  db_name: "ilf"
+
+secrets:
+  grpc_token: "grpc_token"
+  jwt_secret: "some_secure_token"
